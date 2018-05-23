@@ -1,5 +1,5 @@
 
-var qNum = 7;
+var qNum = 0;
 var question = '<h1>what is your name?</h1>';
 
 var output = document.getElementById('output');
