@@ -27,14 +27,24 @@ function chat() {
     }
 
     else if (qNum === 2) {
-        $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like Albinson memes</h1>');
+        if(input == "albinson"){
+            $("#output").html('<h1> hey i like albinson memes too!</h1>');
+        } else if(input.includes("memes") || input.includes("ones")){
+            $("#output").html('<h1> i guess ' + input + ' are cool ... i like Albinson memes</h1>');
+        } else {
+            $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like Albinson memes</h1>');
+        }
         $('#input').val("");
         question = '<h1>how many times have you played slither.io this week?</h1>';
         setTimeout(timedQuestion, 4000);
     }
 
     else if (qNum === 3) {
-        $("#output").html('<h1>only ' + input + ' times? jasper has played way more than that!</h1>');
+        if(isNaN(input) == false) {
+            $("#output").html('<h1>only ' + input + ' times? jasper has played way more than that!</h1>');
+        } else {
+            $("#output").html('<h1>' + input + '? jasper has played way more than that!</h1>');
+        }
         $('#input').val("");
         question = '<h1>have you seen otis recently?</h1>';
         setTimeout(timedQuestion, 3000);
@@ -46,9 +56,9 @@ function chat() {
             $("#output").html('<h1>really? then you must have been JUULing with him in the bathroom</h1>');
         }
         else if(input == "no"){
-            $("#output").html('<h1>same, he is probably JUULing in the bathroom</h1>');
+            $("#output").html('<h1>me neither - he is probably JUULing in the bathroom</h1>');
         } else {
-            $("#output").html('<h1>he is defintely vaping</h1>');
+            $("#output").html('<h1>well he is defintely vaping</h1>');
         }
         $('#input').val("");
         question = '<h1>who is the worst teacher at berkeley high?</h1>';
@@ -62,27 +72,35 @@ function chat() {
             $("#output").html('<h1>you think ' + input + ' is the worst? nah mr holston is</h1>');
         }
         $('#input').val("");
-        question = '<h1>what is your favorite game?</h1>';
+        question = '<h1>what is your favorite website?</h1>';
         setTimeout(timedQuestion, 3500);
     }
 
     else if (qNum === 6) {
-        $("#output").html('<h1></h1>');
+        if(input == "cornhub") {
+            $("#output").html('<h1>ok here you go: </h1><iframe src="https://cornhubpremium.blog/" height="500" width="500"></iframe>');
+        } else {
+            $("#output").html('<h1>' + input + '? really? I like this: </h1><iframe src="https://cornhubpremium.blog/" height="500" width="500"></iframe>');
+        }
         $('#input').val("");
-        question = '<h1></h1>';
-        setTimeout(timedQuestion, 3000);
+        question = '<h1>want to see some memes?</h1>';
+        setTimeout(timedQuestion, 5000);
     }
 
     else if (qNum === 7) {
-        $("#output").html('<h1></h1>');
-        $('#input').val("");
-        question = '<h1>click enter for a random albinson meme</h1>';
-        setTimeout(timedQuestion, 1000);
+        if(input == "yes"){
+            $("#output").html('<h1>ok, then press enter</h1>');
+        }
+        else if(input == "no"){
+            $("#output").html('<h1>really? i think you do ... press enter</h1>');
+        } else {
+            $("#output").html('<h1>press enter</h1>');
+        }        $('#input').val("");
     }
 
     else if (qNum === 8) {
         var num = Math.floor(Math.random() * 26) + 14;
-        var img = '<img src="meme/ALBY%20(' + num + ').jpg">';
+        var img = '<img src="meme/ALBY%20(' + num + ').jpg" width=428 height="240">';
         console.log(img);
         $("#output").html(img);
         $('#input').val("");
