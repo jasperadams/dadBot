@@ -29,8 +29,10 @@ function chat() {
     else if (qNum === 2) {
         if(input == "albinson"){
             $("#output").html('<h1> hey i like albinson memes too!</h1>');
-        } else if(input.includes("memes") || input.includes("ones")){
+        } else if(input.includes("memes") || input.includes("ones")) {
             $("#output").html('<h1> i guess ' + input + ' are cool ... i like Albinson memes</h1>');
+        } else if(input.includes("meme")) {
+            $("#output").html('<h1> i guess ' + input + ' is cool ... i like Albinson memes</h1>');
         } else {
             $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like Albinson memes</h1>');
         }
@@ -40,7 +42,9 @@ function chat() {
     }
 
     else if (qNum === 3) {
-        if(isNaN(input) == false) {
+        if(input == "0" || input == "none") {
+            $("#output").html('<h1>you are defintely lying. even I play slither</h1>');
+        } else if(isNaN(input) == false) {
             $("#output").html('<h1>only ' + input + ' times? jasper has played way more than that!</h1>');
         } else {
             $("#output").html('<h1>' + input + '? jasper has played way more than that!</h1>');
@@ -52,10 +56,10 @@ function chat() {
 
     else if (qNum === 4) {
         console.log(input);
-        if(input == "yes"){
+        if(input.includes("yes")){
             $("#output").html('<h1>really? then you must have been JUULing with him in the bathroom</h1>');
         }
-        else if(input == "no"){
+        else if(input.includes("no")){
             $("#output").html('<h1>me neither - he is probably JUULing in the bathroom</h1>');
         } else {
             $("#output").html('<h1>well he is defintely vaping</h1>');
@@ -66,8 +70,10 @@ function chat() {
     }
 
     else if (qNum === 5) {
-        if (input == "holston" || input == "mr holston" || input == "ira holston") {
+        if (input.includes("holston")) {
             $("#output").html('<h1>yes, mr holston is terrible</h1>');
+        } else if(input.includes("you")) {
+            $("#output").html('<h1>no, mr holston is definetly worse than me</h1>');
         } else {
             $("#output").html('<h1>you think ' + input + ' is the worst? nah mr holston is</h1>');
         }
@@ -112,6 +118,10 @@ function chat() {
 function timedQuestion() {
     $("#output").html(question);
 }
+
+$(document).keypress(function(e) {
+    $("#output").html(question);
+});
 
 $(document).keypress(function(e) {
     if (e.which === 13) {
