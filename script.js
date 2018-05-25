@@ -30,11 +30,11 @@ function chat() {
         if(input.toLowerCase().includes("albinson")){
             $("#output").html('<h1> hey i like albinson memes too!</h1>');
         } else if(input.toLowerCase().includes("memes") || input.includes("ones")) {
-            $("#output").html('<h1> i guess ' + input + ' are cool ... i like Albinson memes</h1>');
+            $("#output").html('<h1> i guess ' + input + ' are cool ... i like albinson memes</h1>');
         } else if(input.toLowerCase().includes("meme")) {
-            $("#output").html('<h1> i guess ' + input + ' is cool ... i like Albinson memes</h1>');
+            $("#output").html('<h1> i guess ' + input + ' is cool ... i like albinson memes</h1>');
         } else {
-            $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like Albinson memes</h1>');
+            $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like albinson memes</h1>');
         }
         $('#input').val("");
         question = '<h1>how many times have you played slither.io this week?</h1>';
