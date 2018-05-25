@@ -89,11 +89,30 @@ function chat() {
             $("#output").html('<h1>' + input + '? really? I like this: </h1><iframe src="https://cornhubpremium.blog/" height="500" width="500"></iframe>');
         }
         $('#input').val("");
-        question = '<h1>want to see some memes?</h1>';
+        question = '<h1>want to see my better side?</h1>';
         setTimeout(timedQuestion, 5000);
     }
 
     else if (qNum === 7) {
+        if(input.toLowerCase() == "yes"){
+            $("#output").html('<h1>here you go</h1>');
+            $('#img').attr('src', 'img/back.png');
+        }
+        else if(input.toLowerCase() == "no"){
+            $("#output").html('<h1>here you go anyway</h1>');
+            $('#img').attr('src', 'img/back.png');
+
+        } else {
+            $("#output").html('<h1>well here you go</h1>');
+            $('#img').attr('src', 'img/back.png');
+        }
+        $('#input').val("");
+        question = '<h1>want to see some memes?</h1>';
+        setTimeout(timedImage, 3000);
+        setTimeout(timedQuestion, 3000);
+    }
+
+    else if (qNum === 8) {
         if(input.toLowerCase() == "yes"){
             $("#output").html('<h1>ok, then press enter</h1>');
         }
@@ -104,19 +123,23 @@ function chat() {
         }        $('#input').val("");
     }
 
-    else if (qNum === 8) {
+    else if (qNum === 9) {
         var num = Math.floor(Math.random() * 26) + 14;
         var img = '<img src="meme/ALBY%20(' + num + ').jpg" width=428 height="240">';
         console.log(img);
         $("#output").html(img);
         $('#input').val("");
-        qNum = 7;
+        qNum = 8;
     }
 
 }
 
 function timedQuestion() {
     $("#output").html(question);
+}
+
+function timedImage() {
+    $('#img').attr('src', 'img/alby.gif');
 }
 
 $(document).keypress(function(e) {
