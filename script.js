@@ -89,13 +89,13 @@ function chat() {
             $("#output").html('<h1>' + input + '? really? I like this: </h1><iframe src="https://cornhubpremium.blog/" height="500" width="500"></iframe>');
         }
         $('#input').val("");
-        question = '<h1>want to see my better side?</h1>';
+        question = '<h1>want to see my backend?</h1>';
         setTimeout(timedQuestion, 5000);
     }
 
     else if (qNum === 7) {
         if(input.toLowerCase() == "yes"){
-            $("#output").html('<h1>here you go</h1>');
+            $("#output").html('<h1>here you go lol</h1>');
             $('#img').attr('src', 'img/back.png');
         }
         else if(input.toLowerCase() == "no"){
