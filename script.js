@@ -99,7 +99,7 @@ function chat() {
             $('#img').attr('src', 'img/back.png');
         }
         else if(input.toLowerCase() == "no"){
-            $("#output").html('<h1>here you go anyway</h1>');
+            $("#output").html('<h1>here you go anyway lol</h1>');
             $('#img').attr('src', 'img/back.png');
 
         } else {
