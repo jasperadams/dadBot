@@ -120,7 +120,8 @@ function chat() {
             $("#output").html('<h1>really? i think you do ... press enter</h1>');
         } else {
             $("#output").html('<h1>press enter</h1>');
-        }        $('#input').val("");
+        }        
+        $('#input').val("");
     }
 
     else if (qNum === 9) {
