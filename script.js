@@ -1,6 +1,6 @@
 
 var qNum = 0;
-var question = '<h1>what is your name?</h1>';
+var question = '<h1>hello! what is your name?</h1>';
 
 var output = document.getElementById('output');
 
@@ -15,14 +15,14 @@ function chat() {
     if (qNum === 0) {
         $("#output").html('<h1>hello ' + input + '</h1>');
         $('#input').val("");
-        question = '<h1>how much of your last assignment did you do?</h1>';
+        question = '<h1>do you know what day it is today?</h1>';
         setTimeout(timedQuestion, 2000);
     }
 
     else if (qNum === 1) {
-        $("#output").html('<h1>' + input + '? ok that is a 14/15 </h1>');
+        $("#output").html('<h1>' + input + '?  </h1>');
         $('#input').val("");
-        question = '<h1>what is your favorite type of meme?</h1>';
+        question = '<h1>whats the date today?</h1>';
         setTimeout(timedQuestion, 2000);
     }
 
