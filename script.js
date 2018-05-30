@@ -13,29 +13,25 @@ function chat() {
     console.log(input);
 
     if (qNum === 0) {
-        $("#output").html('<h1>hello ' + input + '</h1>');
+        if(input.toLowerCase().includes("brad")){
+            $("#output").html('<h1>hello brad! i am the dad-bot, your computer alter-ego</h1>');
+        } else {
+            $("#output").html('<h1>hello ' + input + '. i am the dad-bot</h1>');
+        }
         $('#input').val("");
-        question = '<h1>do you know what day it is today?</h1>';
+        question = '<h1>how are you doin?</h1>';
         setTimeout(timedQuestion, 2000);
     }
 
     else if (qNum === 1) {
-        $("#output").html('<h1>' + input + '?  </h1>');
+        $("#output").html('<h1>' + input + '? glad to hear it! </h1>');
         $('#input').val("");
-        question = '<h1>whats the date today?</h1>';
+        question = '<h1>question: what kind of bear is best?</h1>';
         setTimeout(timedQuestion, 2000);
     }
 
     else if (qNum === 2) {
-        if(input.toLowerCase().includes("albinson")){
-            $("#output").html('<h1> hey i like albinson memes too!</h1>');
-        } else if(input.toLowerCase().includes("memes") || input.includes("ones")) {
-            $("#output").html('<h1> i guess ' + input + ' are cool ... i like albinson memes</h1>');
-        } else if(input.toLowerCase().includes("meme")) {
-            $("#output").html('<h1> i guess ' + input + ' is cool ... i like albinson memes</h1>');
-        } else {
-            $("#output").html('<h1> i guess ' + input + ' memes are cool ... i like albinson memes</h1>');
-        }
+        $("#output").html('<h1>' + input + '? </h1>');
         $('#input').val("");
         question = '<h1>how many times have you played slither.io this week?</h1>';
         setTimeout(timedQuestion, 4000);
@@ -140,7 +136,7 @@ function timedQuestion() {
 }
 
 function timedImage() {
-    $('#img').attr('src', 'img/alby.gif');
+    $('#img').attr('src', 'img/dad.gif');
 }
 
 $(document).keypress(function(e) {
