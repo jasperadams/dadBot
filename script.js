@@ -32,8 +32,10 @@ function chat() {
 
     else if (qNum === 2) {
         $("#output").html('<h1>' + input + '? FACT: bears eat beets. bears, beets, Battlestar Galactica.</h1>');
+        $('#img').attr('src', 'https://i1.sndcdn.com/artworks-000001104797-rgzcts-t500x500.jpg');
         $('#input').val("");
         question = '<h1>?</h1>';
+        setTimeout(timedImage, 3000);
         setTimeout(timedQuestion, 4000);
     }
 
