@@ -68,7 +68,9 @@ function chat() {
         $("#output").html('<h1></h1>');
         $('#img').attr('src', 'img/birthay.png');
         $('#input').val("");
-    } 
+    }
+    
+}
 
 function timedQuestion() {
     $("#output").html(question);
