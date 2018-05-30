@@ -34,22 +34,22 @@ function chat() {
         $("#output").html('<h1>' + input + '? FACT: bears eat beets. bears, beets, Battlestar Galactica.</h1>');
         $('#img').attr('src', 'https://i1.sndcdn.com/artworks-000001104797-rgzcts-t500x500.jpg');
         $('#input').val("");
-        question = '<h1>anyway... i heard today is a special day - is that right?</h1>';
+        question = '<h1>sorry i guess i turned into dwight-bot there for a second... anyway, i heard today is a special day - is that right?</h1>';
         setTimeout(timedImage, 5000);
         setTimeout(timedQuestion, 5000);
     }
 
     else if (qNum === 3) {
         if(input.toLowerCase().includes("yes")){
-            $("#output").html('<h1>youre right! today is the day I was born - literally!</h1>');
+            $("#output").html('<h1>youre right! today is the day dad-bot was born!</h1>');
         }
         else if(input.toLowerCase().includes("no")){
-            $("#output").html('<h1>i think youre wrong - today is the day I was born - literally!</h1>');
+            $("#output").html('<h1>i think youre wrong - today is the day dad-bot was born!</h1>');
         } else {
-            $("#output").html('<h1>' + input + '? well today is the day I was born - literally!</h1>');
+            $("#output").html('<h1>' + input + '? well today is the day dad-bot was born!</h1>');
         }
         $('#input').val("");
-        question = '<h1>but I think its also special for a different reason ... whats the date today?</h1>';
+        question = '<h1>but ... I think its also special for a different reason ... whats the date today?</h1>';
         setTimeout(timedQuestion, 3000);
     }
 
