@@ -66,7 +66,7 @@ function chat() {
 
     else if (qNum === 5) {
         $("#output").html('<h1></h1>');
-        $('#img').attr('src', 'img/birthay.png');
+        $('#img').attr('src', 'img/birthday.png');
         $('#input').val("");
     }
     
