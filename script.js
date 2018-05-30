@@ -26,14 +26,14 @@ function chat() {
     else if (qNum === 1) {
         $("#output").html('<h1>' + input + '? glad to hear it! </h1>');
         $('#input').val("");
-        question = '<h1>question: what kind of bear is best?</h1>';
+        question = '<h1>QUESTION: what kind of bear is best?</h1>';
         setTimeout(timedQuestion, 2000);
     }
 
     else if (qNum === 2) {
-        $("#output").html('<h1>' + input + '? </h1>');
+        $("#output").html('<h1>' + input + '? FACT: bears eat beets. bears, beets, Battlestar Galactica.</h1>');
         $('#input').val("");
-        question = '<h1>how many times have you played slither.io this week?</h1>';
+        question = '<h1>?</h1>';
         setTimeout(timedQuestion, 4000);
     }
 
