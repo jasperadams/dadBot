@@ -34,19 +34,13 @@ function chat() {
         $("#output").html('<h1>' + input + '? FACT: bears eat beets. bears, beets, Battlestar Galactica.</h1>');
         $('#img').attr('src', 'https://i1.sndcdn.com/artworks-000001104797-rgzcts-t500x500.jpg');
         $('#input').val("");
-        question = '<h1>?</h1>';
-        setTimeout(timedImage, 3000);
-        setTimeout(timedQuestion, 4000);
+        question = '<h1>anyway, guess how old I am! </h1>';
+        setTimeout(timedImage, 5000);
+        setTimeout(timedQuestion, 5000);
     }
 
     else if (qNum === 3) {
-        if(input == "0" || input == "none") {
-            $("#output").html('<h1>you are defintely lying. even I play slither</h1>');
-        } else if(isNaN(input) == false) {
-            $("#output").html('<h1>only ' + input + ' times? jasper has played way more than that!</h1>');
-        } else {
-            $("#output").html('<h1>' + input + '? jasper has played way more than that!</h1>');
-        }
+        $("#output").html('<h1>' + input +' ? </h1>');
         $('#input').val("");
         question = '<h1>have you seen otis recently?</h1>';
         setTimeout(timedQuestion, 3000);
