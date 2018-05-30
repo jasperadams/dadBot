@@ -20,14 +20,14 @@ function chat() {
         }
         $('#input').val("");
         question = '<h1>how are you doin?</h1>';
-        setTimeout(timedQuestion, 2000);
+        setTimeout(timedQuestion, 3000);
     }
 
     else if (qNum === 1) {
         $("#output").html('<h1>' + input + '? glad to hear it! </h1>');
         $('#input').val("");
         question = '<h1>QUESTION: what kind of bear is best?</h1>';
-        setTimeout(timedQuestion, 2000);
+        setTimeout(timedQuestion, 2500);
     }
 
     else if (qNum === 2) {
