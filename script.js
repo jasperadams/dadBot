@@ -69,7 +69,7 @@ function chat() {
         $('#img').attr('src', 'img/birthday.png');  
         $('#img').attr('width', 500);
         $('#input').val("");
-        question = '<h1>HAPPY BIRTHDAY from DAD-BOT</h1>';
+        question = '<h1>Love From Jasper</h1>';
     }
     
 }
